@@ -5,7 +5,7 @@
 Dependência;
 mpd + ncmpcpp
 
-# INSTALAÇÃO mpd + ncmpcp
+# INSTALAÇÃO mpd + ncmpcpp
 ```bash 
 # sudo eopkg it git mpd ncmpcpp && mkdir ~/.config/mpd && mkdir .config/mpd/playlists && wget https://raw.githubusercontent.com/nilsonlinux/ncmpcpp-mpd/master/mpd.conf && cp mpd.conf ~/.config/mpd/ && mpd && ncmpcpp
 

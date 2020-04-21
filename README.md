@@ -3,4 +3,4 @@
 ## Instalação
 
 
-### git clone https://github.com/nilsonlinux/polybar && cd polybar && cp -r fonts/* ~/.local/share/fonts && fc-cache -v && cp -r * ~/.config/polybar && ~/.config/polybar/polybar.sh
+#### sudo eopkg it polybar && git clone https://github.com/nilsonlinux/polybar && cd polybar && cp -r fonts/* ~/.local/share/fonts && fc-cache -v && cp -r * ~/.config/polybar && ~/.config/polybar/polybar.sh

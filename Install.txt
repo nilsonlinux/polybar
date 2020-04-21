@@ -1,0 +1,66 @@
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+;;
+;;	    ____        __      __              
+;;	   / __ \____  / /_  __/ /_  ____ ______
+;;	  / /_/ / __ \/ / / / / __ \/ __ `/ ___/
+;;	 / ____/ /_/ / / /_/ / /_/ / /_/ / /    
+;;	/_/    \____/_/\__, /_.___/\__,_/_/     
+;;	              /____/                    
+;;
+;; Created By Aditya Shakya @adi1090x
+;;
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+Crie uma pasta dentro de .config /polybar e extrai os arquivos nesta pasta
+Em seguida pegue a pasta fonts e copie ou recorte ela pro caminho .local /share/fonts
+
+Dependência;
+mpd + ncmpcpp
+
+INSTALAÇÂO
+
+sudo eopkg it mpd ncmpcpp
+----------------------------------------------------
+mkdir ~/.config/mpd
+nano ~/.config/mpd/mpd.conf
+----------------------------------------------------
+####### MPD CONFIG #######
+
+# Required files
+db_file            "~/.config/mpd/database"
+log_file           "~/.config/mpd/log"
+
+# Optional
+music_directory    "~/Música"
+playlist_directory "~/.config/mpd/playlists"
+pid_file           "~/.config/mpd/pid"
+state_file         "~/.config/mpd/state"
+sticker_file       "~/.config/mpd/sticker.sql"
+
+audio_output {  
+      type  "alsa"  
+      name  "mpd alsamixer-output"
+      mixer_type "software"
+}
+
+audio_output {  
+type               "fifo"  
+name               "toggle_visualizer"
+path               "/tmp/mpd.fifo"
+format             "44100:16:2"
+}
+
+####### END MPD CONFIG #######
+---------------------------------------------------------
+mkdir .config/mpd/playlists
+
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+;;	    __________  ______
+;;	   / ____/ __ \/ ____/
+;;	  / __/ / / / / /_    
+;;	 / /___/ /_/ / __/    
+;;	/_____/\____/_/       
+;;
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
